@@ -7,16 +7,21 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Map<Player, Integer> points = new HashMap<>();
-        points.put(new Player(1, "Joe", true), 1);
-        points.put(new Player(2, "Joe2", true), 0);
-        points.put(new Player(3, "Joe3", true), 0);
-        points.put(new Player(4, "Joe4", true), 10);
-        points.put(new Player(5, "Joe5", true), 0);
-        points.put(new Player(6, "Joe6", true), 0);
-        points.put(new Player(7, "Joe7", true), 12);
-        points.put(new Player(8, "Joe8", true), 11);
-        points.put(new Player(9, "Joe9", true), 13);
-        points.put(new Player(10, "Joe10", true), 5);
+
+        for (int i = 1; i < 11; i++) {
+            points.put(new Player(i, "Player " + i, true), 0);
+        }
+
+        points.put(new Player(1, "Player 1", true), 1);
+        points.put(new Player(2, "Player 2", true), 0);
+        points.put(new Player(3, "Player 3", true), 0);
+        points.put(new Player(4, "Player 4", true), 10);
+        points.put(new Player(5, "Player 5", true), 0);
+        points.put(new Player(6, "Player 6", true), 0);
+        points.put(new Player(7, "Player 7", true), 12);
+        points.put(new Player(8, "Player 8", true), 11);
+        points.put(new Player(9, "Player 9", true), 13);
+        points.put(new Player(10, "Player 10", true), 5);
 
 
         for (int i = 0; i < 3; i++) {
