@@ -27,7 +27,6 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             Player winner = null;
             int maxScored = 0;
-            int count = 0;
 
             for (Map.Entry<Player, Integer> map : points.entrySet()) {
                 Player player = map.getKey();
